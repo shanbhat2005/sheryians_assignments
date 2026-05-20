@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Art Work</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(135deg, #0d0d1a 0%, #1a0a2e 50%, #0a1628 100%);
+      min-height: 100vh;
+      padding: 40px 30px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .header h2 {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .header a {
+      color: #b084f5;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 12px;
+      width: calc(25% - 12px);
+    }
+
+    .img-wrap {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 160px;
+      background: #1e1233;
+    }
+
+    .img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .heart {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: rgba(0,0,0,0.4);
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0 10px;
+    }
+
+    .info span:first-child {
+      color: #e8e8f0;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .info span:last-child {
+      color: #9a9ab0;
+      font-size: 11px;
+    }
+
+    .bid-btn {
+      display: block;
+      width: 100%;
+      padding: 9px 0;
+      background: transparent;
+      border: 1.5px solid #9b5cf6;
+      border-radius: 30px;
+      color: #c084fc;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .bid-btn:hover {
+      background: linear-gradient(90deg, #7c3aed, #a855f7);
+      color: #fff;
+      border-color: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Explore Art Work</h2>
+    <a href="#">See All</a>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?w=600&auto=format&fit=crop&q=60" alt="Spiderman" />
+        <div class="heart">🤍</div>
+      </div>
+      <div class="info">
+        <span>Spiderman</span>
+        <span>34.5k</span>
+      </div>
+      <button class="bid-btn">Place Bid</button>
+    </div>
+
+    <div class="card">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1668381868969-64447587238f?w=600&auto=format&fit=crop&q=60" alt="Miles Morales" />
+        <div class="heart">🤍</div>
+      </div>
+      <div class="info">
+        <span>Miles Morales</span>
+        <span>32.4k</span>
+      </div>
+      <button class="bid-btn">Place Bid</button>
+    </div>
+
+    <div class="card">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?w=600&auto=format&fit=crop&q=60" alt="Batman" />
+        <div class="heart">🤍</div>
+      </div>
+      <div class="info">
+        <span>Batman</span>
+        <span>95.6k</span>
+      </div>
+      <button class="bid-btn">Place Bid</button>
+    </div>
+
+    <div class="card">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1687803151700-555141919170?w=600&auto=format&fit=crop&q=60" alt="Gekko" />
+        <div class="heart">🤍</div>
+      </div>
+      <div class="info">
+        <span>Gekko</span>
+        <span>78.9k</span>
+      </div>
+      <button class="bid-btn">Place Bid</button>
+    </div>
+
+    <div class="card">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1559535332-db9971090158?w=600&auto=format&fit=crop&q=60" alt="Captain America" />
+        <div class="heart">🤍</div>
+      </div>
+      <div class="info">
+        <span>Captain America</span>
+        <span>24.6k</span>
+      </div>
+      <button class="bid-btn">Place Bid</button>
+    </div>
+
+    <div class="card">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1608889825205-eebdb9fc5806?w=600&auto=format&fit=crop&q=60" alt="Thor" />
+        <div class="heart">🤍</div>
+      </div>
+      <div class="info">
+        <span>Thor</span>
+        <span>53.7k</span>
+      </div>
+      <button class="bid-btn">Place Bid</button>
+    </div>
+
+    <div class="card">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1560343776-97e7d202ff0e?w=600&auto=format&fit=crop&q=60" alt="Hulk" />
+        <div class="heart">🤍</div>
+      </div>
+      <div class="info">
+        <span>Groot</span>
+        <span>45.7k</span>
+      </div>
+      <button class="bid-btn">Place Bid</button>
+    </div>
+
+    <div class="card">
+      <div class="img-wrap">
+        <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?w=600&auto=format&fit=crop&q=60" alt="Spiderman" />
+        <div class="heart">🤍</div>
+      </div>
+      <div class="info">
+        <span>Spiderman</span>
+        <span>40.5k</span>
+      </div>
+      <button class="bid-btn">Place Bid</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
