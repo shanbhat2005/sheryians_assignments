@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h1>Task Manager</h1>
+        <button>theme</button>
+      </nav>
+      <main>
+        <section class="tasks-record">
+          <div id="total-task" class="task-boxes">
+            <p>Total Tasks</p>
+            <h1>2</h1>
+          </div>
+          <div id="completed-task" class="task-boxes">
+            <p>completed task</p>
+            <h1>1</h1>
+          </div>
+          <div id="pending-task" class="task-boxes">
+            <p>Pending Tasks</p>
+            <h1>2</h1>
+          </div>
+        </section>
+        <section class="form">
+          <form action="">
+            <div class="form-sec-1">
+              <input type="text" placeholder="enter task title" id="task-title" />
+              <select>
+                <option value="work">work</option>
+                <option value="personal">personal</option>
+                <option value="study">study</option>
+              </select>
+              <button type="submit" id="add-btn">+Add Task</button>
+            </div>
+            <div class="form-sec-2">
+              <input type="text" placeholder="search task" id="search" />
+              <select>
+                <option value="">all category</option>
+                <option value="">work</option>
+                <option value="">personal</option>
+                <option value="">study</option>
+              </select>
+              <button type="button" id="rm-all-btn">Clear all</button>
+            </div>
+          </form>
+        </section>
+        <section class="tasks">
+          <p>Your tasks</p>
+          <div class="task">
+            <p class="empty-msg">No tasks yet. Add one above!</p>
+            <!-- <div class="task-card">
+                        <div id="task-detail">
+                            <h1 id="task-name">complete assignment</h1>
+                             <div id="task-types">
+                                <div class="task-type"> <p>study</p></div>
+                                <div class="task-status"> <p>pending</p></div>
+                             </div>
+                        </div>
+                        <div class="task-editing">
+                            <button>🖊️</button>
+                            <button>✔️</button>
+                            <button>🗑️</button>
+                        </div>
+                       
+                    </div> -->
+          </div>
+        </section>
+        <section class="event-prop">
+          <div class="event-prop-heading">
+            <p>Event propogation Demo</p>
+          </div>
+          <div class="event-prop-diagram">
+            <div class="grand-parent">
+              <p>Grandparent</p>
+              <div class="parent">
+                <p>Parent</p>
+                <div class="child">
+                  <p>child</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="log-box">
+            <p>Console output will appear here...</p>
+          </div>
+          <div class="event-buttons">
+            <button id="bubble-btn">Bubbling</button>
+            <button id="capture-btn">Capturing</button>
+          </div>
+        </section>
+        <section class="brp">
+          <div class="brp-heading">
+            <h2>Browser rendering pipeline</h2>
+            <p>how a browser turns HTML + CSS into what you see</p>
+          </div>
+          <div class="brp-diagram">
+            <div class="brp1">
+              <div id="html" class="brp-box"><p>HTML</p></div>
+
+              <div class="arrow">↓</div>
+
+              <div id="parsing" class="brp-box"><p>Parsing</p></div>
+
+              <div class="arrow">↓</div>
+
+              <div id="tokenization" class="brp-box"><p>Tokenization</p></div>
+
+              <div class="arrow">↓</div>
+
+              <div id="DOM-Tree" class="brp-box"><p>DOM Tree</p></div>
+            </div>
+             <div class="plus-sign">+</div>
+            <div class="brp2">
+              <div id="css" class="brp-box"><p>CSS</p></div>
+
+              <div class="arrow">↓</div>
+
+              <div id="cssom" class="brp-box"><p>CSSOM Tree</p></div>
+            </div>
+             <div class="arrow">➡️</div>
+            
+            <div class="brp3">
+                <div id="renderTree" class="brp-box"><p>Render tree</p></div>
+                <div class="arrow">↓</div>
+
+                <div id="layout" class="brp-box"><p>Layout</p></div>
+                <div class="arrow">↓</div>
+
+                <div id="paint" class="brp-box"><p>paint</p></div>
+                <div class="arrow">↓</div>
+
+                <div id="screen" class="brp-box"><p>screen</p></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
